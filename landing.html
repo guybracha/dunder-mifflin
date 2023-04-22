@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');
+    *{
+    font-family: 'Chivo Mono', monospace;
+    box-sizing: border-box;
+	margin: 4px;
+	padding: 4px;
+    }
+    body{
+    background-color: rgba(144, 44, 144, 0.592);
+    }
+    h1{
+        font-size: 4.5em;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 15px;
+        color: white;
+        text-decoration: underline;
+    }
+    p, h2{
+        color: black;
+        margin-left: 15px;
+    }
+    .floatRight{
+        float: right;
+        margin-left: 20px;
+    }
+    input, button{
+        background-color: white;
+        margin-left: 20px;
+    }
+    img{
+        border: 2.5px solid black;
+        border-radius: 10%;
+    }
+    audio{
+        margin-right: 20px;
+        float: left;
+    }
+    a{
+        font-size: 20px;
+    }
+</style>
+<body>
+    <h1>Hey you!</h1>
+    <div style="background-color: rgb(104, 140, 239); border-radius: 7.5%;">
+    <p>Yes, you dude! <br> Are you owner of some business and you need some paper supply quickly? <br> Because we have the best people for the job...</p>
+    <h2>Dunder Mifflin</h2>
+    <img class="floatRight" src="img/staff.jpg" alt="staff" width="400px" height="auto">
+    <p>The best paper company of scranton, pennsylvania since 1949</p>
+    <p>For more info, leave your contact info below, yoy won't regret it</p>
+    <p>Name: <input type="text" id="name"></p>
+    <p>Email Address: <input type="text" id="name"></p>
+    <p>Phone Number: <input type="text" id="name"></p>
+    <button onclick="submit()">Submit</button>
+    <p id="demo"></p>
+    </div>
+    <audio controls autoplay>
+        <source src="mp3/theoffice.mp3" type="audio/mpeg">
+    </audio>
+    <p style="text-align: right;">Developed by Guy Bracha for Dunder Mifflin inc 2023</p>
+    <a href="index.html">To Michael</a>
+    <script>
+        function submit(){
+            document.getElementById("demo").innerHTML = "Thank you very much";
+            console.log(Date());
+        }
+    </script>
+</body>
+</html>
